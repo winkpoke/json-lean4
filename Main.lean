@@ -19,4 +19,4 @@ def main (args : List String) : IO Unit := do
   | Option.some filename =>
     let json ← IO.FS.readFile filename
     -- IO.println json
-    jsonParser json |> reprStr |> IO.println
+    jsonParser json.data |> reprStr |> IO.println

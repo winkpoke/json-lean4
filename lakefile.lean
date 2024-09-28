@@ -9,5 +9,6 @@ lean_lib «Json» where
 
 @[default_target]
 lean_exe "json" where
-  moreLeancArgs := #["-O0", "-UNDEBUG"]
+  -- moreLeancArgs := #["-O0", "-UNDEBUG"]
+  moreLeancArgs := #["-O3"]
   root := `Main

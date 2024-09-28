@@ -1,3 +1,3 @@
-import Json.JsonParser
+import Json.JsonParserA
 
 -- export jsonParser
